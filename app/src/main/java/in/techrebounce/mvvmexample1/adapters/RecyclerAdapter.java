@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -22,7 +23,7 @@ import in.techrebounce.mvvmexample1.models.NicePlace;
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.PlacesViewHolder>{
 
     private Context mContext;
-    private List<NicePlace> mNicePlaces;
+    private List<NicePlace> mNicePlaces = new ArrayList<>();
 
     public RecyclerAdapter(Context context, List<NicePlace> nicePlaces) {
             this.mContext = context;
